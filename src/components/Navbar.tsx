@@ -24,7 +24,9 @@ const Navbar:React.FC<myProps> = ({menuOpen,setMenuOpen}) => {
             </div>
 
             {/**this is the mobile menu, burger icon */}
-            <span className="md:hidden z-40 cursor-pointer p-4">
+            <span 
+                className="md:hidden z-40 cursor-pointer p-4"
+                onClick={()=> setMenuOpen(!menuOpen)}>
                 <RxHamburgerMenu style={{ display: 'inline-block'}}/>
             </span>
 
