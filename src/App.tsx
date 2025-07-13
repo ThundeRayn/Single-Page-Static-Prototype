@@ -13,7 +13,7 @@ function App() {
     <>
     {!isLoaded && <LoadingScreen onComplete={()=>setIsLoaded(true)}/>}
     <div className={`min-h-screen transition-opacity duration-700 ${isLoaded? "opacity-100" : "opacity-0"}`}>
-      <Navbar menuOpen={menuOpen} setMenuOpen={()=>setMenuOpen(true)}/>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Hero/>
     </div>
     </>
