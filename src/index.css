@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html,body{
+  margin:0;
+  padding:0;
+  background-color: oklch(97% 0.001 106.424);
+  color:black;
+}
+
+@layer utilities{
+  @keyframes blink{
+    0%,100%{
+      opacity:1;
+    }
+    50%{
+      opacity:0;
+    }
+  }
+
+  .animation-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+}
